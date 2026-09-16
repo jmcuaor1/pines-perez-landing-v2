@@ -59,11 +59,22 @@ const BENEFITS = [
 
 function Logo() {
   return (
-    <img
-      src="/logo-horizontal.png"
-      alt="Pérez – Pines & Llaveros · ZAMAK"
-      className="h-9 w-auto"
-    />
+    <span className="flex items-center gap-3">
+      <img src="/logo-icon.png" alt="Microfundiciones Pérez" className="h-9 w-auto" />
+      <span
+        style={{
+          fontFamily: "var(--font-display)",
+          color: "#f5f0e8",
+          fontSize: 15,
+          lineHeight: 1.15,
+          letterSpacing: "0.02em",
+        }}
+      >
+        Microfundiciones
+        <br />
+        <span style={{ color: "#c9a84c" }}>Pérez</span>
+      </span>
+    </span>
   );
 }
 
@@ -637,7 +648,7 @@ function Contact({ onCotizar }: { onCotizar: () => void }) {
             style={{ borderColor: "rgba(201,168,76,0.15)", minHeight: 360 }}
           >
             <iframe
-              title="Ubicación Pérez – Pines y Llaveros"
+              title="Ubicación Microfundiciones Pérez"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.826219370965!2d-74.10490168573!3d4.567390043643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a8f0e8f0e8f%3A0x0!2sCl.%2030%20Sur%20%2312H-94%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1694000000000!5m2!1ses!2sco"
               width="100%"
               height="100%"
@@ -690,7 +701,7 @@ function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p style={{ fontSize: 12, color: "#6b6b6b" }}>
-            © {new Date().getFullYear()} Pérez – Pines &amp; Llaveros. Bogotá, Colombia.
+            © {new Date().getFullYear()} Microfundiciones Pérez. Bogotá, Colombia.
           </p>
           <p style={{ fontSize: 12, color: "#6b6b6b" }}>
             Cl. 30 Sur # 12H-94, Rafael Uribe Uribe · Abierto 24h
